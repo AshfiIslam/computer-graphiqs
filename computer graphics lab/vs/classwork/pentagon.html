@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script>
+            function draw() {
+                var canvas = document.getElementById('canvas');
+                if (canvas.getContext) {
+                  var ctx = canvas.getContext('2d');
+              
+                  ctx.beginPath();
+                  ctx.moveTo(100, 100);
+                  ctx.lineTo(130, 130);
+                  ctx.lineTo(120, 180);
+                  ctx.lineTo(80, 180);
+                  ctx.lineTo(70, 130);
+                  ctx.closePath();
+                  ctx.stroke();
+
+                  ctx.beginPath();
+                  ctx.moveTo(200, 200);
+                  ctx.lineTo(230, 230);
+                  ctx.lineTo(220, 280);
+                  ctx.lineTo(180, 280);
+                  ctx.lineTo(170, 230);
+                  ctx.closePath();
+                  ctx.stroke();
+                }
+              }
+            </script>
+    </head>
+    <body onload ="draw();">
+            <canvas id="canvas" width="550" height="550"></canvas>
+     </body>
+</html>

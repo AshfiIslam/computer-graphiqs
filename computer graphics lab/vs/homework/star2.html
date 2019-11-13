@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <script>
+            function draw() {
+                var canvas = document.getElementById('canvas');
+                if (canvas.getContext) {
+                  var ctx = canvas.getContext('2d');
+              
+                  ctx.beginPath();
+                  ctx.moveTo(100, 100);
+                  ctx.lineTo(148, 8);
+                  ctx.lineTo(196, 100);
+                  ctx.lineTo(285, 110);
+                  ctx.lineTo(240, 180);
+                  ctx.lineTo(255, 260);
+                  ctx.lineTo(152, 210);
+                  ctx.lineTo(49, 260);
+                  ctx.lineTo(63, 180);
+                  ctx.lineTo(18, 110);
+                  ctx.closePath();
+                  ctx.fill();
+
+                  ctx.beginPath();
+                  ctx.moveTo(105, 105);
+                  ctx.lineTo(150, 140);
+                  ctx.lineTo(148, 18);
+                  ctx.closePath();
+                  ctx.fillStyle='white';
+                  ctx.fill();
+
+                  ctx.beginPath();
+                  ctx.moveTo(200, 105);
+                  ctx.lineTo(148, 140);
+                  ctx.lineTo(280, 113);
+                  ctx.closePath();
+                  ctx.fillStyle='white';
+                  ctx.fill();
+
+                  ctx.beginPath();
+                  ctx.moveTo(234, 185);
+                  ctx.lineTo(148, 140);
+                  ctx.lineTo(248, 250);
+                  ctx.closePath();
+                  ctx.fillStyle='white';
+                  ctx.fill();
+
+                  ctx.beginPath();
+                  ctx.moveTo(150, 200);
+                  ctx.lineTo(148, 140);
+                  ctx.lineTo(60, 245);
+                  ctx.closePath();
+                  ctx.fillStyle='white';
+                  ctx.fill();
+
+                  ctx.beginPath();
+                  ctx.moveTo(70, 170);
+                  ctx.lineTo(148, 140);
+                  ctx.lineTo(30, 115);
+                  ctx.closePath();
+                  ctx.fillStyle='white';
+                  ctx.fill();
+
+
+                }
+              }
+            </script>
+    </head>
+    <body onload ="draw();">
+            <canvas id="canvas" width="550" height="550"></canvas>
+     </body>
+</html>
